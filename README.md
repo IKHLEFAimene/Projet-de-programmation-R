@@ -1,2 +1,2 @@
-# Projet-de-programmation-R
-Création d’une bibliothèque R permettant de jouer au Démineur
+# jeu démineur
+L’objectif du projet est de créer une bibliothèque R incluant une application Shiny permettant de joueur au Démineur
