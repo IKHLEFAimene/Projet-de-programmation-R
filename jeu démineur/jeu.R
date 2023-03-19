@@ -6,6 +6,9 @@ ui <- fluidPage(
   
   # Titre du jeu
   titlePanel("Jeu de démineur"),
+  body {
+    background-color: black;
+  }
   
   # Sélection du niveau de difficulté
   fluidRow(
@@ -50,11 +53,11 @@ server <- function(input, output, session) {
     for (i in 1:num_mines) {
       mine_row <- sample(1:n, 1)
       mine_col <- sample(1:m, 1)
-      while (board[mine_row, mine_col] == -1) {
+      while (board[mine_row, mine_col] == "⚑") {
         mine_row <- sample(1:n, 1)
         mine_col <- sample(1:m, 1)
       }
-      board[mine_row, mine_col] <- -1
+      board[mine_row, mine_col] <- "⚑"
     }
     return(board)
   }
