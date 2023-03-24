@@ -6,9 +6,6 @@ ui <- fluidPage(
   
   # Titre du jeu
   titlePanel("Jeu de démineur"),
-  body {
-    background-color: black;
-  }
   
   # Sélection du niveau de difficulté
   fluidRow(
